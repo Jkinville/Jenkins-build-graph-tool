@@ -38,7 +38,7 @@ class mostRecentBuildData:
         self.unstable /= self.jobs
         self.aborted /= self.jobs
 
-        print(str(self.date) + ' ' + str(self.success) + ' ' + str(self.fail) + ' ' + str(self.unstable) + ' ' + str(self.aborted) )
+        print(str(self.date) + ' ' + str(self.success) + ' ' + str(self.fail) + ' ' + str(self.unstable) + ' ' + str(self.aborted))
 
 
 def get_server_instance():
