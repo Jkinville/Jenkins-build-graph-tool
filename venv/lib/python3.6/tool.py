@@ -42,8 +42,8 @@ class mostRecentBuildData:
 
 
 def get_server_instance():
-    jenkins_url = 'https://prod-jenkins.newforma.io/'
-    server = Jenkins(jenkins_url, username = 'USERNAME', password = 'PASSWORD')
+    jenkins_url = 'URL'
+    server = Jenkins(jenkins_url, username = 'USERNAME', password = 'PASS')
     jobs = server.get_jobs_info()
     todaysJobs = mostRecentBuildData()
     for job in jobs:
