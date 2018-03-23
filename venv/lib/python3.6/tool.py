@@ -38,7 +38,7 @@ class mostRecentBuildData:
         self.unstable /= self.jobs
         self.aborted /= self.jobs
 
-        print(self.date + ' ' + str(self.success) + ' ' + str(self.fail) + ' ' + str(self.unstable) + ' ' + str(self.aborted) )
+        print(str(self.date) + ' ' + str(self.success) + ' ' + str(self.fail) + ' ' + str(self.unstable) + ' ' + str(self.aborted) )
 
 
 def get_server_instance():
@@ -63,5 +63,5 @@ def get_server_instance():
 
 if __name__ == '__main__':
     excel_output.get_excel_data()
-    jobs = get_server_instance().get_jobs_list()
+    jobs = get_server_instance()
     print(jobs)
